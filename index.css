@@ -1,0 +1,125 @@
+@font-face {
+  font-family: 'Exo';
+  src: url('./assets/font/exo2-medium.woff2') format('woff2');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Exo';
+  src: url('./assets/font/exo2-bold.woff2') format('woff2');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-block-size: 100vh;
+  min-block-size: 100svh;
+  display: grid;
+  place-content: center;
+  font-family: 'Exo', sans-serif;
+  background-color: var(--dark-100);
+}
+
+body, h1, h2, p, ul {
+  margin: 0;
+}
+
+:root {
+  --dark-100: hsl(251, 18%, 12%);
+  --dark-50: hsl(250, 16%, 30%);
+  --white: hsl(220, 14%, 96%);
+  --blue: hsl(201, 88%, 55%);
+  --light-blue: hsl(194, 79%, 85%);
+  --radius: .6rem;
+}
+
+.container {
+  margin-block: 2rem;
+  padding: 3rem 2.2rem;
+  inline-size: clamp(21.1rem, 90vw, 24.4rem);
+  display: grid;
+  justify-items: center;
+  gap: 2rem;
+  color: var(--white);
+  border: 2px solid currentColor;
+  border-radius: var(--radius);
+}
+.main__image {
+  inline-size: 50%;
+}
+.main__title {
+  font-size: clamp(1.6rem, 1rem + 2.5vw, 1.8rem);
+  text-wrap: nowrap;
+}
+
+.form {
+  color: var(--white);
+}
+.input-el,
+.publish-btn {
+  --radius: .25rem;
+
+  padding: .6rem;
+  inline-size: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  border-radius: var(--radius);
+}
+.input-el {
+  resize: none;
+  background-color: var(--dark-50);
+  color: inherit;
+}
+.publish-btn {
+  margin-top: .5rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  background-color: var(--blue);
+  color: var(--dark-100);
+  cursor: pointer;
+}
+
+
+.endorsement {
+  inline-size: 100%;
+  text-align: center;
+}
+.endorsement__title {
+  font-size: 1.5rem;
+}
+
+.endorsement-wrap {
+  margin-top: 1rem;
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+}
+.endorsement__item {
+  --radius: .25rem;
+  padding: 1rem;
+  text-align: left;
+  background-color: var(--white);
+  border-radius: var(--radius);
+  color: var(--dark-100);
+  cursor: pointer;
+  line-height: 1.5;
+  transition: background-color .3s ease;
+}
+
+@media (hover:hover) {
+  .endorsement__item:hover {
+    background-color: var(--light-blue);
+  }
+}
