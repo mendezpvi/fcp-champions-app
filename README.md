@@ -22,6 +22,8 @@
 
 [Live Site URL](https://mendezpvi.github.io/fcp-champions-app/) 👀
 
+[Scrimba projects](https://github.com/mendezpvi/fcp-scrimba) 👀
+
 ## *Author* :beginner:
 
 ✨ Frontend Mentor - [mendezpvi](https://www.frontendmentor.io/profile/mendezpvi/)
